@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barber's -Trim your beard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+	<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("menu");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	function openCity2(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent2");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("menu2");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	</script>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top" id="navar" style="background-color: black;color: white; display: block; transition: top 0.3s;border:none;height: 70px;">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">   
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>                       
+		      </button>
+		      <a class="navbar-brand" href="#myPage"><img src="Imgs\logo.jpg"></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar" style="margin-right: -70px;border:none">
+		      <ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
+		        <li><a href="index.html">HOME</a></li>
+		        <li><a href="Blog.html">BLOG</a></li>
+		         <li><a href="Gallery.html">GALLERY</a></li>
+		        <li><a href="Stylist.html">STYLIST</a></li>
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: black;">PRICES </a>
+			        <ul class="dropdown-content">
+			          <li><a href="Prices.html">PRICES-SIMPLE</a></li>
+			          <li><a href="Prices_tabs.html">PRICES-TABS</a></li>
+			        </ul>
+			     </li>
+		        <li><a href="Contact.html">CONTACT</a></li>
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Account.html" style="color: black;"><span class="	fas fa-user"></span> </a>
+			        <ul class="dropdown-content">
+			          <li><a href="Login.html">LOG IN</a></li>
+			          <li><a href="Signup.html">SIGN UP</a></li>
+			          <li><a href="Account.html">ACCOUNT</a> </li>
+			          <li><a href="">EXIT</a></li>
+			        </ul>
+			     </li>
+			     <li><input type="text" name="" placeholder="Search..." class="search"></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+
+	<div class="hienthi" style="margin-top: 70px;">
+		<h1>CHECK OUR PRICES (ALL)</h1>
+		<div class="inline"></div><br>
+		<ul class="breadcrumb">
+		  <li><a href="index.html">Home</a></li>
+		  <li>Check our Prices (All)</li>
+		</ul>
+	</div>
+	<div class="container" style="margin-top: 50px;margin-bottom: 50px;">
+		<div class="col-sm-3">
+			<div class="menuprice">
+					<a class="menu active" onclick="openCity(event, 'p1')">CLASSIC HAIR STYLING - 49$</a>
+					<a class="menu" onclick="openCity(event, 'p2')">BEARD TRIMMING - 29$</a>
+					<a class="menu" onclick="openCity(event, 'p3')">MUSTACHE STYLING - 19$</a>
+					<a class="menu" onclick="openCity(event, 'p4')">COMPLETE TREATMENT - 49$</a>
+					<a class="menu" onclick="openCity(event, 'p5')">BEARD SHAVING - 19$</a>
+					<a class="menu" onclick="openCity(event, 'p6')">HAIR COLORING - 39$</a>
+					<a class="menu" onclick="openCity(event, 'p7')">JUST A FAST TRIM - 9$</a>
+					<a class="menu" onclick="openCity(event, 'p8')">BARBER'S MAKEOVER - 249$</a>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<div id="p1" class="tabcontent"  style="display: block;">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>CLASSIC HAIR STYLING - $49</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+
+					<h3>TREATMENT INCLUDES THE FOLLOWING</h3>
+					<ul style="list-style-position: inside;">
+						<li>Special Treatment number 1</li>
+						<li>Special Treatment number 2</li>
+						<li>Special Treatment number 3</li>
+						<li>Special Treatment number 4</li>
+					</ul>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p1_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p1_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p2" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>BEARD TRIMMING - $29</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish.<b> Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Prices, products and offers may vary per location.</p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of <b>your beard.</b></p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p2_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p2_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p3" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>MUSTACHE STYLING - $19</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p3_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p3_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p4" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>COMPLETE TREATMENT - $49</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish.<b> Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+
+					<p>Haircut, shampoo/conditioner & hot towel finish. <b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p4_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p4_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p5" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>BEARD SHAVING - $19</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p><b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Prices, products and offers may vary per location.</p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of <b>your beard.</b></p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p5_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p5_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p6" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>HAIR COLORING - $39</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Prices, products and offers may vary per location. </p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p6_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p6_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p7" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>JUST A FAST TRIM - 9$</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p7_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p7_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p8" class="tabcontent">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>BARBER'S MAKEOVER - 249$</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p8_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p8_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid" style=" margin-top: 50px;margin-bottom: 50px;">
+		<img src="Imgs\banber3.jpg" style="width: 100%;">
+	</div>
+
+
+	<div class="container">
+		<div class="col-sm-3">
+			<div class="menuprice">
+					<a class="menu2 active" onclick="openCity2(event, 'p01')">CLASSIC HAIR STYLING - 49$</a>
+					<a class="menu2" onclick="openCity2(event, 'p02')">BEARD TRIMMING - 29$</a>
+					<a class="menu2" onclick="openCity2(event, 'p03')">MUSTACHE STYLING - 19$</a>
+					<a class="menu2" onclick="openCity2(event, 'p04')">COMPLETE TREATMENT - 49$</a>
+					<a class="menu2" onclick="openCity2(event, 'p05')">BEARD SHAVING - 19$</a>
+					<a class="menu2" onclick="openCity2(event, 'p06')">HAIR COLORING - 39$</a>
+					<a class="menu2" onclick="openCity2(event, 'p07')">JUST A FAST TRIM - 9$</a>
+					<a class="menu2" onclick="openCity2(event, 'p08')">BARBER'S MAKEOVER - 249$</a>
+			</div>
+		</div>
+		<div class="col-sm-9">
+			<div id="p01" class="tabcontent2"  style="display: block;">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>CLASSIC HAIR STYLING - $49</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+
+					<h3>TREATMENT INCLUDES THE FOLLOWING</h3>
+					<ul style="list-style-position: inside;">
+						<li>Special Treatment number 1</li>
+						<li>Special Treatment number 2</li>
+						<li>Special Treatment number 3</li>
+						<li>Special Treatment number 4</li>
+					</ul>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p1_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p1_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p02" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>BEARD TRIMMING - $29</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish.<b> Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Prices, products and offers may vary per location.</p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of <b>your beard.</b></p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p2_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p2_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p03" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>MUSTACHE STYLING - $19</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p3_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p3_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p04" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>COMPLETE TREATMENT - $49</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish.<b> Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.</p>
+
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+
+					<p>Haircut, shampoo/conditioner & hot towel finish. <b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p4_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p4_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p05" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of<b> your beard.</b></p>
+					<h3>BEARD SHAVING - $19</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea.Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p><b>Lorem ipsum</b> dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Prices, products and offers may vary per location.</p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of <b>your beard.</b></p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p5_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p5_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p06" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>HAIR COLORING - $39</h3>
+					<p>Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Prices, products and offers may vary per location. </p>
+
+					<p>Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p6_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p6_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p07" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>JUST A FAST TRIM - 9$</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p7_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p7_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+
+			<div id="p08" class="tabcontent2">
+				<div style="float: left;width: 75%;padding: 30px;font-size: 16px;padding-top: 0px;">
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard.</p>
+					<h3>BARBER'S MAKEOVER - 249$</h3>
+					<p>Prices, products and offers may vary per location. Call your local Barber's Salon for prices. We offer various haircuts and beard trimming of all sorts. But our specialty is the proper trimming of your beard. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod. Haircut, shampoo/conditioner & hot towel finish. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea. Haircut, shampoo/conditioner & hot towel finish.</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				</div>
+				<div style="float:left;width:25%;">
+					<img src="Imgs\p8_1.jpg" style="width: 100%;margin-bottom: 20px;">
+					<img src="Imgs\p8_2.jpg" style="width: 100%;">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<footer class="container-fluid">
+		<div class="container-fluid" style="padding-top: 70px;padding-bottom: 70px;padding-left: 70px;padding-right: 70px;background-color:  #191919;">
+			<div class="col-sm-3">
+				<h3>BUY NOW</h3>
+				<p>If you come all the way down here, you probably like our Barber theme. To help you find where you can buy it, we prepared a solution for that also. Simply click the button below.</p>
+				<button class="send" style="border-radius: 4px;width: 30%;">BUY NOW</button>
+			</div>
+			<div class="col-sm-3">
+				<h3>OUR INSTAGRAM FEED</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3>ABOUT US</h3>
+				<p>Barber Saloon is a vintage design barber that focuses on your beard's best experience.</p>
+
+ 				<p><i class="fas fa-phone-alt"></i>(+386) 40 123 456</p>
+ 				<p><i class="fas fa-envelope"></i>info@barber.com</p>
+ 				<p><i class="fas fa-home"></i>www.barber.com</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>OPENING TIMES</h3><br>
+				<div class="start">
+					<p style="padding-bottom: 20px;"><span class="day">Monday</span><span class="hour">08:00-15:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Tuesday</span><span class="hour">10:00-16:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Wednesday</span><span class="hour">08:00-15:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Thursday</span><span class="hour">08:00-18:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Friday</span><span class="hour">07:00-19:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Saturday</span><span class="hour">CLOSED</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Sunday</span><span class="hour">CLOSED</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="text-align: center;padding: 20px;">
+			<h4>TRIM YOUR BEARD AT  THE BARBER SALOON</h4>
+			<p>The Barber Saloon @2015 by <a> Premiumcoding</a></p>
+		</div>
+	</footer>
+</body>
+</html>

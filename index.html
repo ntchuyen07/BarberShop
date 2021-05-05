@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barber's -Trim your beard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+
+
+	<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("Sep 1, 2020 15:37:25").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+	    
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+	    
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    
+	  // Output the result in an element with id="demo"
+	  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+	  + minutes + "m " + seconds + "s ";
+	    
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+	    clearInterval(x);
+	    document.getElementById("demo").innerHTML = "EXPIRED";
+	  }
+	}, 1000);
+	</script>
+
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default navbar-fixed-top" id="navar" style="background-color: black;color: white; display: block; transition: top 0.3s;border:none;height: 70px;">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">   
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>                       
+		      </button>
+		      <a class="navbar-brand" href="#myPage"><img src="Imgs\logo.jpg"></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar" style="margin-right: -70px;border:none">
+		      <ul class="nav navbar-nav navbar-right" style="padding-top: 10px;">
+		        <li><a href="index.html">HOME</a></li>
+		        <li><a href="Blog.html">BLOG</a></li>
+		        <li><a href="Gallery.html">GALLERY</a></li>
+		        <li><a href="Stylist.html">STYLIST</a></li>
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: black;">PRICES </a>
+			        <ul class="dropdown-content">
+			          <li><a href="Prices.html">PRICES-SIMPLE</a></li>
+			          <li><a href="Prices_tabs.html">PRICES-TABS</a></li>
+			        </ul>
+			     </li>
+		        <li><a href="Contact.html">CONTACT</a></li>
+		        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="Account.html" style="color: black;"><span class="	fas fa-user"></span> </a>
+			        <ul class="dropdown-content">
+			          <li><a href="Login.html">LOG IN</a></li>
+			          <li><a href="Signup.html">SIGN UP</a></li>
+			          <li><a href="Account.html">ACCOUNT</a> </li>
+			          <li><a href="">EXIT</a></li>
+			        </ul>
+			     </li>
+			     <li><input type="text" name="" placeholder="Search..." class="search"></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</div>
+
+
+	<!--Chạy slide ảnh-->
+	<div class="container-fluid" style="width: 100%;height: 700px;">
+		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		      <li data-target="#myCarousel" data-slide-to="3"></li>
+		    </ol>
+
+		    <div class="carousel-inner" role="listbox">
+
+		      <div class="item active">
+		        <img src="Imgs\slide3.jpg" style="width: 100%; height: 700px;">
+			      </div>
+
+			      <div class="item">
+			        <img src="Imgs\slide2.jpg"style="width: 100%; height: 700px;">
+			      </div>
+				    
+			      <div class="item">
+			        <img src="Imgs\slide1.jpg" style="width: 100%; height:700px;">
+			      </div>
+
+			      <div class="item">
+			        <img src="Imgs\slide4.jpg" style="width: 100%; height: 700px;">
+			      </div>
+				  
+		    </div>
+
+				    
+			    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
+			  </div>		
+	</div>
+
+	<!---->
+	<div class="container-fluid" style="padding-left: 100px; padding-right: 100px;margin-top: 70px;">
+		<div class="col-sm-6">
+			<h2>POPULAR BEARD STYLES</h2>
+			<div class="under_line"></div><br>
+			<div class="row">
+				<div class="col-sm-3">
+					<img src="Imgs\p1_1.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p1_2.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p2_1.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p2_2.jpg" class="anhhome">
+				</div>
+			</div>
+			<div class="row" style="padding-top: 20px;">
+				<div class="col-sm-3">
+					<img src="Imgs\p3_1.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p3_2.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p4_1.jpg" class="anhhome">
+				</div>
+				<div class="col-sm-3">
+					<img src="Imgs\p4_2.jpg" class="anhhome">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h2>CHECK OUR TOP PRICES</h2>
+			<div class="under_line"></div><br>
+			<p>Trim your Beard <span class="price"> <b>from $15</b></span></p>
+			<hr style="width: 100%;border-style: dashed; font-size: 4px;">
+			<p>Trim your Hair  <span class="price"> <b>from $40</b></span></p>
+			<hr style="width: 100%;border-style: dashed; font-size: 4px;">
+			<p>Special Beard Treatment  <span class="price"><b>from $59</b></span></p>
+			<hr style="width: 100%;border-style: dashed; font-size: 4px;">
+			<p>Color your Beard  <span class="price"> <b>from $69</b></span></p>
+			<hr style="width: 100%;border-style: dashed; font-size: 4px;">
+			<p>Wax your Beard  <span class="price"> <b>from $12</b></span></p>
+			<hr style="width: 100%;border-style: dashed; font-size: 4px;">
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="parallax"></div>
+	</div>
+	<div class="container-fluid" style="padding-left: 100px; padding-right: 100px;margin-top: 70px;">
+		<div class="col-sm-6">
+			<h2>OUR SERVICES</h2>
+			<div class="under_line"></div><br>
+			<button class="accordion">HAIRCUTS & STYLING</button>
+			<div class="panel">
+				<h4><a href="Booking.html">MAKE AN APPOINTMENT</a> | <a>SEE OUR STYLISTS</a></h4>
+				<hr>
+				<p>Prices, products and offers may vary per location. Call your local 18|8 Fine Men's Salon for prices.</p>
+
+				<h2>CLASSIC - $49</h2>
+				<p>Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>EXECUTIVE - $89</h2>
+				<p>5-minute neck & shoulder massage. Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>YOUNG MASTER - $29</h2>
+				<p>Cool kids cuts (under 12 years)</p>
+				<h2>STUDENTS - $39</h2>
+				<p>Awesomeness on a college budget. (Sunday - Tuesday until 4 pm)</p>
+				<h2>DISTINGUISHED MASTER - $26</h2>
+				<p>Nothing is better than a good-looking older man. (Sunday - Tuesday until 4 pm)</p>
+			</div>
+			<button class="accordion">BEARD TREATMENT</button>
+			<div class="panel">
+				<h4><a href="Booking.html">MAKE AN APPOINTMENT</a> | <a>SEE OUR STYLISTS</a></h4><hr>
+				<p>Prices, products and offers may vary per location. Call your local 18|8 Fine Men's Salon for prices.</p>
+
+				<h2>CLASSIC - $49</h2>
+				<p>Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>EXECUTIVE - $89</h2>
+				<p>5-minute neck & shoulder massage. Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>YOUNG MASTER - $29</h2>
+				<p>Cool kids cuts (under 12 years)</p>
+				<h2>STUDENTS - $39</h2>
+				<p>Awesomeness on a college budget. (Sunday - Tuesday until 4 pm)</p>
+				<h2>DISTINGUISHED MASTER - $26</h2>
+				<p>Nothing is better than a good-looking older man. (Sunday - Tuesday until 4 pm)</p>
+			</div>
+			<button class="accordion">COLORING SERVICES</button>
+			<div class="panel">
+				<h4><a href="Booking.html">MAKE AN APPOINTMENT</a> | <a>SEE OUR STYLISTS</a></h4><hr>
+				<p>Prices, products and offers may vary per location. Call your local 18|8 Fine Men's Salon for prices.</p>
+
+				<h2>CLASSIC - $49</h2>
+				<p>Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>EXECUTIVE - $89</h2>
+				<p>5-minute neck & shoulder massage. Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>YOUNG MASTER - $29</h2>
+				<p>Cool kids cuts (under 12 years)</p>
+				<h2>STUDENTS - $39</h2>
+				<p>Awesomeness on a college budget. (Sunday - Tuesday until 4 pm)</p>
+				<h2>DISTINGUISHED MASTER - $26</h2>
+				<p>Nothing is better than a good-looking older man. (Sunday - Tuesday until 4 pm)</p>
+			</div>
+			<button class="accordion">BEARD WAXING</button>
+			<div class="panel">
+				<h4><a href="Booking.html">MAKE AN APPOINTMENT</a> | <a>SEE OUR STYLISTS</a></h4><hr>
+				<p>Prices, products and offers may vary per location. Call your local 18|8 Fine Men's Salon for prices.</p>
+
+				<h2>CLASSIC - $49</h2>
+				<p>Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>EXECUTIVE - $89</h2>
+				<p>5-minute neck & shoulder massage. Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>YOUNG MASTER - $29</h2>
+				<p>Cool kids cuts (under 12 years)</p>
+				<h2>STUDENTS - $39</h2>
+				<p>Awesomeness on a college budget. (Sunday - Tuesday until 4 pm)</p>
+				<h2>DISTINGUISHED MASTER - $26</h2>
+				<p>Nothing is better than a good-looking older man. (Sunday - Tuesday until 4 pm)</p>
+			</div>
+			<button class="accordion">OTHER SERVICES</button>
+			<div class="panel">
+				<h4><a href="Booking.html">MAKE AN APPOINTMENT</a> | <a>SEE OUR STYLISTS</a></h4><hr>
+				<p>Prices, products and offers may vary per location. Call your local 18|8 Fine Men's Salon for prices.</p>
+
+				<h2>CLASSIC - $49</h2>
+				<p>Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>EXECUTIVE - $89</h2>
+				<p>5-minute neck & shoulder massage. Haircut, shampoo/conditioner & hot towel finish.</p>
+				<h2>YOUNG MASTER - $29</h2>
+				<p>Cool kids cuts (under 12 years)</p>
+				<h2>STUDENTS - $39</h2>
+				<p>Awesomeness on a college budget. (Sunday - Tuesday until 4 pm)</p>
+				<h2>DISTINGUISHED MASTER - $26</h2>
+				<p>Nothing is better than a good-looking older man. (Sunday - Tuesday until 4 pm)</p>
+			</div>
+		</div>
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+
+
+
+		<div class="col-sm-6">
+			<h2>OUR STORY</h2>
+			<div class="under_line"></div><br>
+			<p>We offer various haircuts and beard trimming of all sorts. Our specialty is the trimming of your beard. You are in trusted hands with our stylists.</p>
+			<img src="Imgs\our.jpg" style="width: 95%;padding: 20px;"><br>
+			<p>We provide the best barber services in town. If you have any questions about our services, do not hesitate to contact us at <span style="background-color:#538167;color:white;"> info@barber.com </span> and let us know your wishes. We will be happy to answer your inquiries. Or call us at <b>386 40 556 558.</b></p><br>
+		</div>
+	</div>
+	<!--Khách hàng nói gì về chúng tôi-->
+		<div class="container slideshow-container text-center" style="margin-bottom: 50px;">
+			<h2 style="text-align: center;font-family: 'Anton';font-size: 40px;">What our customers say?</h2>
+			<div class="line"></div><br>
+				<div class="mySlides">
+				   <img src="Imgs\avat5.jpg" alt="Avatar" class="avatar" style="width: 120px;height: 120px; text-align: center;margin-top: -20px"><br><br>
+				  <q style="font-family: 'Charm'">Barber Saloon is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</q>
+				  <p class="author">John Doe, Happy Customer<i> Posted on May 1, 2020</i></p>
+				</div>
+
+				<div class="mySlides">
+					<img src="Imgs\avat1.jpg" alt="Avatar" class="avatar" style="width: 120px;height: 120px; text-align: center;">
+					<br><br>
+				  <q style="font-family: 'Charm'">Top-notch service. I couldn't have been more pleased. I always leave with a big smile on my face and much more relaxed than when I arrived.</q>
+				  <p class="author">John Mustachio, Satisfied Customer <i> Posted on February 21, 2020 </i></p>
+				</div>
+
+				<div class="mySlides">
+					<img src="Imgs\avat2.jpg" alt="Avatar" class="avatar" style="width: 120px;height: 120px; text-align: center;"><br><br>
+				  <q style="font-family: 'Charm'">Top-notch service. I couldn't have been more pleased. I always leave with a big smile on my face and much more relaxed than when I arrived.</q>
+				  <p class="author">James Dean <i> Posted on Math 5, 2020 </i></p>
+				</div>
+
+				<div class="mySlides">
+					<img src="Imgs\avat3.jpg" alt="Avatar" class="avatar" style="width: 120px;height: 120px; text-align: center;"><br><br>
+				  <q style="font-family: 'Charm'">I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+				  <p class="author"> John Keats - <i> Posted on February 17, 2020 </i></p>
+				</div>
+
+				<div class="mySlides">
+					<img src="Imgs\avat4.jpg" alt="Avatar" class="avatar" style="width: 120px;height: 120px; text-align: center;"><br><br>
+				  <q style="font-family: 'Charm'">Barber Saloon is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</q>
+				  <p class="author">Helen <i> Posted on February 21, 2020</i></p>
+				</div>
+		</div>
+		
+		<!--Hiển thị chấm tròn để đọc phản hồi-->
+		<div class="dot-container">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		</div>
+		<!--Chương trình JS chạy Phản hồi-->
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+
+	<div class="container-fluid" style=" position: relative; text-align: center;margin-top: 50px;">
+		<img src="Imgs\banber3.jpg" style="width: 100%;">
+		<div class="container" style="position: absolute;  bottom: 0; background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.7);color: #f1f1f1;width: 100%;padding: 100px;height: 100%;">
+			<h2 class="col-sm-12" style="font-size: 60px;padding-bottom: 70px;font-family: 'Anton';">DISCOUNT COUPON FOR -20%: BARBERO</h2>
+			<p  class="col-sm-12" id="demo" style="font-size: 90px;margin-right:-100px;"></p>
+		</div>
+	</div>
+	<div class="container-fluid" style="padding:100px;">
+		<h4 style="text-align: center;color:#dfdfdf;">MEET OUR TEAM OF BEARD PROFESSIONALS</h4>
+		<h2 style="text-align: center;font-family: 'Anton';font-size: 45px;">OUR BARBERS AND STYLISTS</h2>
+		<div class="line"></div><br>
+		<div class="row text-center slideanim">
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<img src="Imgs\avat1.jpg" class="avat">
+					<h3><b>JAMES BARBER</b></h3>
+					<img src="Imgs\logo2.jpg" style="height: 80px;width: 80%;">
+					<h5><b> Beard Trimmer</b></h5>
+					<p style="padding-top: 10px;">10 years of experience in bearding.</p>
+					<p>You will be in trusted hands.</p>
+					<p style="padding-top: 10px;">Email: <a><b>james@barber.com</b></a></p>
+					<div style="padding-top: 10px;"><span class="lk"><i class="fab fa-twitter"><a href=""></a></i></span>
+					<span class="lk"><i class="fab fa-facebook"><a href="#"></a></i></span>
+					<span class="lk"><i class="fab fa-instagram"><a href=""></a></i></span>
+					<span class="lk"><i class="	fab fa-dribbble"><a href=""></a></i></span></div>
+					<br>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<img src="Imgs\avat2.jpg" class="avat">
+					<h3><b>DEEN MUSTACHIO</b></h3>
+					<img src="Imgs\logo2.jpg" style="height: 80px;width: 80%;">
+					<h5><b> Mustache Expert</b></h5>
+					<p style="padding-top: 10px;">5 years of experience in bearding.</p>
+					<p>You will be in trusted hands.</p>
+					<p style="padding-top: 10px;">Email: <a><b>deen@barber.com</b></a></p>
+					<div style="padding-top: 10px;"><span class="lk"><i class="fab fa-twitter"><a href=""></a></i></span>
+					<span class="lk"><i class="fab fa-facebook"><a href="#"></a></i></span>
+					<span class="lk"><i class="fab fa-instagram"><a href=""></a></i></span>
+					<span class="lk"><i class="	fab fa-dribbble"><a href=""></a></i></span></div>
+					<br>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<img src="Imgs\avat3.jpg" class="avat">
+					<h3><b>JOSEPHINE COLORISTA</b></h3>
+					<img src="Imgs\logo2.jpg" style="height: 80px;width: 80%;">
+					<h5><b> Color Expert</b></h5>
+					<p style="padding-top: 10px;">7 years of experience in bearding.</p>
+					<p>You will be in trusted hands.</p>
+					<p style="padding-top: 10px;">Email: <a><b>josephine@barber.com</b></a></p>
+					<div style="padding-top: 10px;"><span class="lk"><i class="fab fa-twitter"><a href=""></a></i></span>
+					<span class="lk"><i class="fab fa-facebook"><a href="#"></a></i></span>
+					<span class="lk"><i class="fab fa-instagram"><a href=""></a></i></span>
+					<span class="lk"><i class="	fab fa-dribbble"><a href=""></a></i></span></div>
+					<br>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="thumbnail">
+					<img src="Imgs\avat4.jpg" class="avat">
+					<h3><b>CLINT HAIRISTA</b></h3>
+					<img src="Imgs\logo2.jpg" style="height: 80px;width: 80%;">
+					<h5><b> Hair Specialist</b></h5>
+					<p style="padding-top: 10px;">12 years of experience in bearding.</p>
+					<p>You will be in trusted hands.</p>
+					<p style="padding-top: 10px;">Email: <a><b> clint@barber.com</b></a></p>
+					<div style="padding-top: 10px;"><span class="lk"><i class="fab fa-twitter"><a href=""></a></i></span>
+					<span class="lk"><i class="fab fa-facebook"><a href="#"></a></i></span>
+					<span class="lk"><i class="fab fa-instagram"><a href=""></a></i></span>
+					<span class="lk"><i class="	fab fa-dribbble"><a href=""></a></i></span></div>
+					<br>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="container-fluid">
+		<!--Đăng kí Email để theo dõi-->
+		<div class="container-fluid text-center" style="padding: 50px;margin-bottom: 50px;">
+			<h2><b>Theo dõi</b></h2>
+			<p style="font-size: 18px;">Để nhận thông tin khuyến mãi từ BARBER'S TRIM YOUR BEARD</p>
+			<form action="/action_page.php">
+				<input type="text" name="" placeholder="Địa chỉ Email" class="Email">
+				<button class="dkEmail">Đăng ký</button>
+			</form>
+		</div>
+	</div>
+
+	<footer class="container-fluid">
+		<div class="container-fluid" style="padding-top: 70px;padding-bottom: 70px;padding-left: 70px;padding-right: 70px;background-color:  #191919;">
+			<div class="col-sm-3">
+				<h3>BUY NOW</h3>
+				<p>If you come all the way down here, you probably like our Barber theme. To help you find where you can buy it, we prepared a solution for that also. Simply click the button below.</p>
+				<button class="send" style="border-radius: 4px;width: 30%;">BUY NOW</button>
+			</div>
+			<div class="col-sm-3">
+				<h3>OUR INSTAGRAM FEED</h3>
+			</div>
+			<div class="col-sm-3">
+				<h3>ABOUT US</h3>
+				<p>Barber Saloon is a vintage design barber that focuses on your beard's best experience.</p>
+
+ 				<p><i class="fas fa-phone-alt"></i>(+386) 40 123 456</p>
+ 				<p><i class="fas fa-envelope"></i>info@barber.com</p>
+ 				<p><i class="fas fa-home"></i>www.barber.com</p>
+			</div>
+			<div class="col-sm-3">
+				<h3>OPENING TIMES</h3><br>
+				<div class="start">
+					<p style="padding-bottom: 20px;"><span class="day">Monday</span><span class="hour">08:00-15:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Tuesday</span><span class="hour">10:00-16:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Wednesday</span><span class="hour">08:00-15:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Thursday</span><span class="hour">08:00-18:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Friday</span><span class="hour">07:00-19:00</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Saturday</span><span class="hour">CLOSED</span></p>
+					<p style="padding-bottom: 20px;"><span class="day">Sunday</span><span class="hour">CLOSED</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="text-align: center;padding: 20px;">
+			<h4>TRIM YOUR BEARD AT  THE BARBER SALOON</h4>
+			<p>The Barber Saloon @2015 by <a> Premiumcoding</a></p>
+		</div>
+	</footer>
+
+
+	<!--Nút contact bên trang-->
+		<div id="mySidenav">
+			<a id="ThemPH" style="background-color: #FF8C00;" onclick="openCT()"><span class="fas fa-paper-plane" style="margin-right: 15px;font-size: 20px;"></span>   Contact</a>
+		</div>
+	<!--Form liên hệ của khách hàng-->
+		<div class="form-popup" id="myFeedback" style="display: none;">
+			  <form action="/action_page.php" class="form-container">
+			  	<h2>CONTACT</h2>
+			    <input type="text" name="" placeholder="Tên của bạn" class="in-text"><br>
+			    <input type="text" name="" placeholder="Email hoặc Số điện thoại">
+			    <textarea rows="3" cols="50" placeholder="Bạn cần giúp gì?"></textarea>
+			    <label><i style="color: cornflowerblue;font-size: 13px;">Tin nhắn thường được trả lời trong vòng vài giờ. Chúng tôi sẽ sớm liên lạc với bạn. Chân thành cảm ơn</i></label><br><br>
+			    <button type="submit" class="btn">SEND</button>
+			    <button type="button" class="btn cancel" onclick="closeCT()">Cancel</button>
+			  </form>
+		</div>
+		<!--Chương trình JS mở/đóng Form Contact-->
+		<script>
+			function openCT() {
+			  document.getElementById("myFeedback").style.display = "block";
+			}
+
+			function closeCT() {
+			  document.getElementById("myFeedback").style.display = "none";
+			}
+		</script>
+
+
+			<!--Tạo nút trở lại đầu trang-->
+	<button onclick="topFunction()" id="BtnTop" title="Go to top">
+		<i class="fas fa-chevron-up"></i><br>
+		Top</button>
+	<script>
+		//Get the button
+		var buttop = document.getElementById("BtnTop");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    buttop.style.display = "block";
+		  } else {
+		    buttop.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+</body>
+</html>
